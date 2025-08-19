@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    
+}
+
+
+
+.cal-container {
+    margin-top: 5rem;
+    display: inline-block;
+    border-radius: 15px;
+    background: linear-gradient(45deg, #0a0a0a, #3a4452);
+    padding-bottom: 1rem;
+    box-shadow: 2px 2px 15px rgb(56, 55, 54);
+    border:1px solid black;
+}
+
+.operator{
+    background-color: rgb(227, 72, 16);
+}
+
+button {
+    width: 4rem;
+    height: 4rem;
+    margin: .5rem;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    background-color: rgb(98, 96, 96);
+    border: none;
+    color: white;
+    box-shadow: -8px -8px 15px rgb(84, 84, 84, 0.1);
+    cursor: pointer;
+    
+}
+
+button:hover{
+   transform: translatey(1px);
+   /* box-shadow: 3px 3px 10px rgb(81, 80, 80); */
+   box-shadow: -2px -3px 15px rgb(8, 8, 8);
+   transition: .3s;
+}
+
+.input{
+    width: 19rem;
+    height: 2.5rem;
+    font-size: 2rem;
+    text-align: end;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    color: white;
+    cursor: text;
+    background: transparent;
+}
+
+input::placeholder{
+    color: white;
+}
