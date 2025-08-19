@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    background-image: radial-gradient(circle at 105rem 25rem,
+            #a8db2d 3%,
+            #333727 30%);
+}
+
+nav {
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    background: transparent;
+    padding: 0px 90px;
+    align-items: center;
+    height: auto;
+    border-bottom: 2px ridge rgb(88, 99, 60);
+}
+
+.logo img {
+    background: transparent;
+    filter: invert(1);
+}
+
+.links {
+    background: transparent;
+}
+
+.links ul {
+    display: flex;
+    gap: 3rem;
+    background: transparent;
+    list-style: none;
+    font-size: 1.35rem;
+}
+
+.links ul li {
+    background: transparent;
+    cursor: pointer;
+}
+
+.links ul li:hover {
+    text-decoration: underline;
+    text-underline-offset: 2rem;
+
+}
+
+.icons {
+    display: flex;
+    background: transparent;
+    gap: 1rem;
+}
+
+.icons img {
+    width: 60px;
+    background: transparent;
+    filter: invert(1);
+    cursor: pointer;
+}
+
+.icons img:hover {
+    transform: scaleX(1.15);
+}
+
+.hero {
+    color: white;
+    background: transparent;
+    display: flex;
+}
+
+.left {
+
+    max-width: 40vw;
+    padding: 30px 60px;
+    align-items: start;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+p {
+    font-size: 1.5rem;
+    margin-top: 1.3rem;
+}
+
+button {
+    display: flex;
+    font-weight: 600;
+    margin-top: 2.5rem;
+    border: none;
+    background: chartreuse;
+    font-size: 1.2rem;
+    padding: 18px;
+    border-radius: 10px;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+}
+
+button:hover{
+    box-shadow: 3px 3px 15px rgb(107, 154, 107);
+    font-size: 1.25rem;
+}
+
+span img {
+    padding-bottom: -10px;
+    width: 40px;
+    background: transparent;
+
+}
+
+.right {
+    display: flex;
+    background: transparent;
+    justify-content: center;
+    padding-left: 20px;
+
+}
+
+.right img {
+    background: none;
+    /* width: 65rem;
+    height: 40rem;
+    position: relative; */
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+}
+
+.grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    background: transparent;
+    padding: 2rem;
+}
+
+.card {
+    display: grid;
+    background: transparent;
+    border-radius: 10px;
+    box-shadow: -2px 1px 2px white;
+    padding: 10px;
+    color: white;
+}
+
+.card:hover {
+    box-shadow: -1px 2px 10px white;
+    transition: .4s;
+
+}
+
+.shoe {
+    background: transparent;
+    width: 250px;
+    padding: 0px 50px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    background: transparent;
+}
+
+h4 {
+    background: transparent;
+}
+
+.info img {
+    width: 20px;
+    background: transparent;
+    filter: invert(1);
+    align-items: center;
+    align-items: end;
+    cursor: pointer;
+
+}
+
+.info img:hover {
+    transform: scale3d(1.4, 1.4, 2);
+    transition: .2s;
+}
+
+@media screen and (max-width:950px) {
+
+    .links {
+        display: none;
+    }
+
+    .grid {
+        display: grid;
+    }
+}
+
+@media screen and (max-width:750px) {
+    .hero {
+        display: grid;
+    }
+
+    nav {
+        padding: 20px;
+    }
+
+    .icons {
+        display: grid;
+        gap: 0;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .left {
+        max-width: 100%;
+        padding: 30px 30px;
+        text-align: center;
+        
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+        margin-top: 1.3rem;
+    }
+
+    .shoe {
+        padding: 0px 10px;
+    }
+
+}
